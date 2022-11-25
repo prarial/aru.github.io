@@ -1,0 +1,62 @@
+.hedden {
+    display: none;
+  }
+  
+  .check_url {
+    color: #ee5253;
+  }
+  
+  .header_link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    padding: 18px;
+    color: white;
+  }
+  .header_item__logo {
+    width: 70%;
+  }
+  
+  .header_item__menu {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .header_item__hidden {
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .active {
+    visibility: visible;
+    opacity: 1;
+    animation: notificationAnimation 0.1s ease-in-out;
+  }
+  
+  @keyframes notificationAnimation {
+    0% {
+      transform: translateY(30px);
+    }
+    50% {
+      tranform: none;
+    }
+    100% {
+      tranform: none;
+    }
+  }
+  
+  .header_item__items:hover {
+    color: #ff5252;
+  }
+  
